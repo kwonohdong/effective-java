@@ -1,13 +1,17 @@
-package pattern.singleton;
+package ch02.item002.singleton;
 
 import java.io.Serializable;
 
-public class SerializeSingleton001 implements Serializable {
-    public static final SerializeSingleton001 INSTANCE = new SerializeSingleton001();
+public class SerializeSingleton002 implements Serializable {
+    private static final SerializeSingleton002 INSTANCE = new SerializeSingleton002();
 
-    private SerializeSingleton001() {
+    private SerializeSingleton002() {
         // AccessibleObject.setAccessible 사용해 private 생성자 호출 방지
         throw new AssertionError();
+    }
+
+    public SerializeSingleton002 getInstance() {
+        return INSTANCE;
     }
 
     /**

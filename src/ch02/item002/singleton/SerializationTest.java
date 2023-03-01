@@ -1,4 +1,4 @@
-package pattern.singleton;
+package ch02.item002.singleton;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

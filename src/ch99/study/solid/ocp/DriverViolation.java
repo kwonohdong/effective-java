@@ -1,4 +1,4 @@
-package solid.ocp;
+package ch99.study.solid.ocp;
 
 public class DriverViolation {
     public static void main(String[] args) {

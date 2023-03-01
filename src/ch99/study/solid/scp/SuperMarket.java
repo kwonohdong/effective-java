@@ -1,4 +1,4 @@
-package solid.scp;
+package ch99.study.solid.scp;
 
 public class SuperMarket {
     private String owner;   // 주인

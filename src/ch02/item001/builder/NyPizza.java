@@ -1,4 +1,4 @@
-package pattern.builder;
+package ch02.item001.builder;
 
 import java.util.Objects;
 

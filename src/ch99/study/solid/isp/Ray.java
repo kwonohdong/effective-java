@@ -1,4 +1,4 @@
-package solid.isp;
+package ch99.study.solid.isp;
 
 public class Ray implements Car {
     @Override

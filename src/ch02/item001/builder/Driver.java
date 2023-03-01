@@ -1,4 +1,4 @@
-package pattern.builder;
+package ch02.item001.builder;
 
 public class Driver {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package pattern.singleton;
+package ch02.item002.singleton;
 
 /**
  * 대부분의 상황에서 원소가 하나뿐인 열거 타입이 싱글턴을 만드는 가장 좋은 방법이다.

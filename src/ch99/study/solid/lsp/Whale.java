@@ -1,4 +1,4 @@
-package solid.lsp;
+package ch99.study.solid.lsp;
 
 public class Whale implements Animal {
 
