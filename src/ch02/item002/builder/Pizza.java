@@ -1,4 +1,4 @@
-package ch02.item001.builder;
+package ch02.item002.builder;
 
 import java.util.EnumSet;
 import java.util.Objects;

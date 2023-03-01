@@ -1,14 +1,17 @@
-package ch02.item002.singleton;
+package ch02.item003.singleton;
 
-public class Singleton001 {
-    /**
-     * public 으로 싱글톤 객체를 바로 제공하므로, 해당 클래스가 싱글턴임이 API에 명백히 드러난다.
-     */
-    public static final Singleton001 INSTANCE = new Singleton001();
+import java.io.Serializable;
 
-    private Singleton001() {
+public class SerializeSingleton2 implements Serializable {
+    private static final SerializeSingleton2 INSTANCE = new SerializeSingleton2();
+
+    private SerializeSingleton2() {
         // AccessibleObject.setAccessible 사용해 private 생성자 호출 방지
         throw new AssertionError();
+    }
+
+    public SerializeSingleton2 getInstance() {
+        return INSTANCE;
     }
 
     /**

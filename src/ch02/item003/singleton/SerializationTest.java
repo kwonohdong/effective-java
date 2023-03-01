@@ -1,4 +1,4 @@
-package ch02.item002.singleton;
+package ch02.item003.singleton;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -28,10 +28,10 @@ public class SerializationTest {
     }
 
     public static void main(String[] args) {
-        SerializeSingleton001 instance = SerializeSingleton001.INSTANCE;
+        SerializeSingleton1 instance = SerializeSingleton1.INSTANCE;
         SerializationTest serializationTest = new SerializationTest();
         byte[] serializeData = serializationTest.serialize(instance);
-        SerializeSingleton001 result = (SerializeSingleton001) serializationTest.deserialize(serializeData);
+        SerializeSingleton1 result = (SerializeSingleton1) serializationTest.deserialize(serializeData);
 
         // readResolve 메소드 주석 전/후 테스트
         System.out.println("instance == result: " + (instance == result));

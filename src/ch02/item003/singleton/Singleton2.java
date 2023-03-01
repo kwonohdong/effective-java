@@ -1,13 +1,13 @@
-package ch02.item002.singleton;
+package ch02.item003.singleton;
 
-public class Singleton002 {
+public class Singleton2 {
     /**
      * API를 바꾸지 않고도 싱글턴이 아니게 변경할 수 있다는 점이다.
      * 호출하는 스레드별로 다른 인스턴스를 넘겨주게 할 수 있다.
      */
-    private static final Singleton002 INSTANCE = new Singleton002();
+    private static final Singleton2 INSTANCE = new Singleton2();
 
-    private Singleton002() {
+    private Singleton2() {
         // AccessibleObject.setAccessible 사용해 private 생성자 호출 방지
         throw new AssertionError();
     }
@@ -15,7 +15,7 @@ public class Singleton002 {
     /**
      * @return
      */
-    public static Singleton002 getInstance() {
+    public static Singleton2 getInstance() {
         return INSTANCE;
     }
 

@@ -1,17 +1,13 @@
-package ch02.item002.singleton;
+package ch02.item003.singleton;
 
 import java.io.Serializable;
 
-public class SerializeSingleton002 implements Serializable {
-    private static final SerializeSingleton002 INSTANCE = new SerializeSingleton002();
+public class SerializeSingleton1 implements Serializable {
+    public static final SerializeSingleton1 INSTANCE = new SerializeSingleton1();
 
-    private SerializeSingleton002() {
+    private SerializeSingleton1() {
         // AccessibleObject.setAccessible 사용해 private 생성자 호출 방지
         throw new AssertionError();
-    }
-
-    public SerializeSingleton002 getInstance() {
-        return INSTANCE;
     }
 
     /**

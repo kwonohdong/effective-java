@@ -1,4 +1,4 @@
-package ch02.item001.builder;
+package ch02.item002.builder;
 
 public class KPizza extends Pizza {
     private final boolean sauceInside;

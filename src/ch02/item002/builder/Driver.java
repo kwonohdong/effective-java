@@ -1,4 +1,4 @@
-package ch02.item001.builder;
+package ch02.item002.builder;
 
 public class Driver {
     public static void main(String[] args) {
